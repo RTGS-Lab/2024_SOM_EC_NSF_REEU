@@ -25,14 +25,17 @@ date: "2024-07-18"
 3. **Folder:** analysis_ready
 
 	  A. **Filename:** *som_ec_data.xlsx*
+	  
       The two files in the preprocessed folder combined into one table
 
 4. **Folder:** exploratory
     
     A. **Filename:** *ec_data_analysis.R*
+    
       Code written in RStudio that creates boxplots for each dependent variable versus field, one-way ANNOVA with field versus ec_bulk, and two-way ANNOVA with field, sample, and ec_bulk
       
     B. **Filename:** *som_ec_analysis.R*
+    
       Code written to RStudio that analyzes SOM and EC data with regression lines and two way annova
       
 **Relationship between files:**        
