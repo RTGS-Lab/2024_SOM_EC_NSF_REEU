@@ -24,16 +24,16 @@ date: "2024-07-18"
 
 3. **Folder:** analysis_ready
 
-	A. **Filename:** *som_ec_data.xlsx*
-	     The two files in the preprocessed folder combined into one table
+  A. **Filename:** *som_ec_data.xlsx*
+	The two files in the preprocessed folder combined into one table
 
 4. **Folder:** exploratory
     
   A. **Filename:** *ec_data_analysis.R*
-    Code written in RStudio that creates boxplots for each dependent variable versus field, one-way ANOVA with field versus ec_bulk, and two-way ANOVA with field, sample, and ec_bulk
+  	Code written in RStudio that creates boxplots for each dependent variable versus field, one-way ANOVA with field versus ec_bulk, and two-way ANOVA with field, sample, and ec_bulk
       
   B. **Filename:** *som_ec_analysis.R*
-    Code written to RStudio that analyzes SOM and permittivity data with regression lines and two way ANOVA
+  	Code written to RStudio that analyzes SOM and permittivity data with regression lines and two way ANOVA
     
 **Relationship between files:**        
 Files in the *preprocessed* folder are cleaned datasets for SOM and permittivity containing measurements from the *raw* folder that are pertinent to the experiment. The file in the *analysis_ready* folder is a dataset created by combining the files in the *preprocessed* folder. Files in the *exploratory* folder are code written for the process of exploratory data visualization and analysis.   
