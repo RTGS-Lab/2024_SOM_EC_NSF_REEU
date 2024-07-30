@@ -6,7 +6,8 @@ date: "2024-07-18"
 # **Project Title:** Real-time Soil Health Sensing: Soil Permittivity and Soil Organic Matter Correlation in Annual Tilled Crops Versus Perennial Turf
 
 
-## **Project Description:** This project was built in the interest of further understanding the validity of permittivity sensor data as a surrogate for soil organic matter mass percent in agricultural land as the number of farmers interested in more efficient, environmentally conscious management practices increases. It contains the data files and code associated with the data analysis and visualization for soil permittivity correlation with soil organic matter at the University of Minnesota St. Paul Campus. This project was funded by the NSF sponsored SOAR-REEU program in partnership with Runck lab and GEMS Informatics. 
+## **Project Description:** 
+This project was built in the interest of further understanding the validity of permittivity sensor data as a surrogate for soil organic matter mass percent in agricultural land as the number of farmers interested in more efficient, environmentally conscious management practices increases. It contains the data files and code associated with the data analysis and visualization for soil permittivity correlation with soil organic matter at the University of Minnesota St. Paul Campus. This project was funded by the NSF sponsored SOAR-REEU program in partnership with Runck lab and GEMS Informatics. 
 
 1. **Folder:** raw
 
