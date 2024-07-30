@@ -38,4 +38,8 @@ date: "2024-07-18"
 **Relationship between files:**        
 Files in the *preprocessed* folder are cleaned datasets for SOM and permittivity containing measurements from the *raw* folder that are pertinent to the experiment. The file in the *analysis_ready* folder is a dataset created by combining the files in the *preprocessed* folder. Files in the *exploratory* folder are code written for the process of exploratory data visualization and analysis.   
 
+# Other Resources
+- [Main project Google Drive folder](https://drive.google.com/drive/folders/1-ZpFsM2tPaxNaNnNS-6vKggXL9pEBzZs)
+
+# Acknowledgements
 
