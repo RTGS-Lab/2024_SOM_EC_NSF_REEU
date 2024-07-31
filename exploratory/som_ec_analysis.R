@@ -179,6 +179,56 @@ ggplot(som_ec_data, aes(x = acclima_soil_permitivity,
        x = "Permittivity", y = "Soil Organic Matter (%)") +
 theme_minimal()
 
+#managing resolution
+s <- ggplot(som_ec_data, aes(x = acclima_soil_permitivity, y = organic_matter, color = field, group = 1)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Correlation of Permittivity and SOM", x = "Permittivity", y = "Soil Organic Matter (%)") +
+  theme_minimal() +
+  theme(
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA),
+    legend.background = element_rect(fill = "white", color = NA),
+    panel.grid.major = element_blank(), # Remove major grid lines
+    panel.grid.minor = element_blank(), # Remove minor grid lines
+    text = element_text(size = 16,face = "bold"),  # Increase font size for all text
+    plot.title = element_text(size = 20, face = "bold"),  # Increase font size for title
+    axis.title = element_text(size = 18, face="bold"),  # Increase font size for axis titles
+    axis.text = element_text(size = 14, face = "bold"))  # Increase font size for axis text
+ggsave("correlation.png", plot = s, dpi = 300, width = 7.92, height = 5.58)
 
+#managing resolution boxplot
+B1 <-ggplot(som_ec_data, aes(x = field,y = organic_matter, fill = field)) + 
+  geom_boxplot() + 
+  labs(title = "Soil Organic Matter by Field Type", x = "Field Type", y = "Organic Matter (%)") +
+  theme_minimal() +
+theme(
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA),
+    legend.background = element_rect(fill = "white", color = NA),
+    panel.grid.major = element_blank(), # Remove major grid lines
+    panel.grid.minor = element_blank(), # Remove minor grid lines
+    text = element_text(size = 16,face = "bold"),  # Increase font size for all text
+    plot.title = element_text(size = 20, face = "bold"),  # Increase font size for title
+    axis.title = element_text(size = 18, face="bold"),  # Increase font size for axis titles
+    axis.text = element_text(size = 14, face = "bold"))  # Increase font size for axis text
+ggsave("som_boxplot.png", plot = B1, dpi = 300, width = 7.92, height = 5.5)
 
-
+#managing perm boxplot
+B2 <- ggplot(som_ec_data, aes(x = field, y = acclima_soil_permitivity, fill = field)) +
+  geom_boxplot() +
+  labs(title = "Permittivity by Field Type",
+       x = "Field Type",
+       y = "Permittivity") +
+  theme_minimal() +
+  theme(
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA),
+    legend.background = element_rect(fill = "white", color = NA),
+    panel.grid.major = element_blank(), # Remove major grid lines
+    panel.grid.minor = element_blank(), # Remove minor grid lines
+    text = element_text(size = 16,face = "bold"),  # Increase font size for all text
+    plot.title = element_text(size = 20, face = "bold"),  # Increase font size for title
+    axis.title = element_text(size = 18, face="bold"),  # Increase font size for axis titles
+    axis.text = element_text(size = 14, face = "bold"))  # Increase font size for axis text
+ggsave("perm_boxplot.png", plot = B2, dpi = 300, width = 7.92, height = 5.58)
