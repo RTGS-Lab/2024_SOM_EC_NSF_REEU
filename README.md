@@ -11,22 +11,22 @@ This project was built in the interest of further understanding the validity of 
 
 1. **Folder:** raw
 
-  A. **Filename:** *ec_raw_data.csv*      
-      CSV file that contains raw data of time and date of Acclima TDR 315H sensor readings of soil electrical conductivity, permittivity, temperature, volumetric water content in 60 second intervals 
-  B. **Filename:** *soil_report.pdf*   
-      A pdf file sent via email by Soil Testing Laboratory at UMN St. Paul campus that provides estimated soil texture, soil organic matter, phosphorous, and potassium levels for each sample location
+  A. **Filename:** *ec_raw_data.csv*
+  	CSV file that contains raw data of time and date of Acclima TDR 315H sensor readings of soil electrical conductivity, permittivity, temperature, volumetric water content in 60 second intervals 
+  B. **Filename:** *soil_report.pdf*
+  	A pdf file sent via email by Soil Testing Laboratory at UMN St. Paul campus that provides estimated soil texture, soil organic matter, phosphorous, and potassium levels for each sample location
       
 2. **Folder:** preprocessed
 
-  A. **Filename:** *ec_data.xlsx*       
-      CSV file containing time and date of Acclima TDR 315 sensor electrical conductivity, permittivity, temperature, volumetric water content data within sample ranges with corresponding coordinates, field type, sample and subsample number
+  A. **Filename:** *ec_data.xlsx*
+  	CSV file containing time and date of Acclima TDR 315 sensor electrical conductivity, permittivity, temperature, volumetric water content data within sample ranges with corresponding coordinates, field type, sample and subsample number
   B. **Filename:** *som_data.xlsx*
-        An excel table that includes the relevant information pertaining to the experiment which includes the field, sample, organic matter measured in mass percent, and level in terms of low, medium and high
+  	An excel table that includes the relevant information pertaining to the experiment which includes the field, sample, organic matter measured in mass percent, and level in terms of low, medium and high
 
 3. **Folder:** analysis_ready
 
   A. **Filename:** *som_ec_data.xlsx*
-	The two files in the preprocessed folder combined into one table
+  	The two files in the preprocessed folder combined into one table
 
 4. **Folder:** exploratory
     
@@ -43,4 +43,35 @@ Files in the *preprocessed* folder are cleaned datasets for SOM and permittivity
 - [Main project Google Drive folder](https://drive.google.com/drive/folders/1-ZpFsM2tPaxNaNnNS-6vKggXL9pEBzZs)
 
 # Acknowledgements
+## **Introduction**
+This section is to ackowledge the organizations and individuals who contributed time, knowledge, money, and moral support for this 10-week project. 
 
+## **Contributors**
+* Samikshya Subedi - Graduate Student/Mentor - Department of Soil, Water, and Climate
+  Allowed use of her plots for this project. Provided guidance for project methodology, ArcGIS Pro, coding, and poster design. Helped execute protocol in corn plot.
+
+* Bobby Schulz - Lead Engineer - GEMS Informatics
+   Created V3 Logger used for this project. Provided guidance for proposal, methodology, data analysis, Github, and poster design. Helped execute protocol in corn/soy plot.
+
+* Ann Piotrowski - Lab Manager - GEMS Informatics
+  Showed me how to use the sensor and logger for this project. Provided guidance on project proposal, data cleaning, and poster design. Helped execute protocol in turf plot.
+
+* Bryan Runck - Primary Investigator - GEMS Informatics
+  Supervised the development of this project. Provided guidance on project proposal, methodology, data analysis, and poster design.
+
+## **Organizations**
+* GEMS Informatics/Runck - Hosting Lab
+  Contibuted supplies, technology, labor, and funding to this 10-week project.
+
+* CFANS - Hosting College
+  Hosted and supported all undergraduate interns in the SOAR-REEU program
+
+* SOAR-REEU
+  Provided funding, transportation and education
+
+## **Special Thanks**
+Thank you to Logan Gall for helping with code review, data analysis, and Github. 
+  
+  
+
+   
