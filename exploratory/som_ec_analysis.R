@@ -126,9 +126,15 @@ ggplot(som_ec_data, aes(x = acclima_soil_permitivity, y = organic_matter, color 
   labs(title = "Correlation of Permittivity and SOM", x = "Permittivity", y = "Soil Organic Matter (%)") +
   theme_minimal()
 
-#two way anova between permittivity, SOM, and field
-two.way_perm <- aov(organic_matter ~ acclima_soil_permitivity + field, data = som_ec_data)
-summary(two.way_perm)
+#anova between SOM, and field
+anova_som <- aov(organic_matter ~field, data = som_ec_data)
+summary(anova_som)
+TukeyHSD(anova_som)
+
+#anova between permittivity, SOM, and field
+anova_perm <- aov(acclima_soil_permitivity ~field, data = som_ec_data)
+summary(anova_perm)
+TukeyHSD(anova_perm)
 
 #checking correlation value between temperature and SOM 
 correlation_temp <-cor(som_ec_data$acclima_soil_temperature,som_ec_data$organic_matter)
@@ -172,5 +178,7 @@ ggplot(som_ec_data, aes(x = acclima_soil_permitivity,
   labs(title = "Correlation of SOM and Permittivity", 
        x = "Permittivity", y = "Soil Organic Matter (%)") +
 theme_minimal()
+
+
 
 
