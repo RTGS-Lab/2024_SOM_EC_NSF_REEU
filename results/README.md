@@ -16,7 +16,7 @@ The results of this variable were not expected. Box plots revealed a pattern of 
 # **Pore EC**
 The boxplot of pore EC by field shows the same descending trend as bulk EC which is the inverse of SOM. Again, fertilizer salts are the main reasoning behind why the crop fields have higher than expected levels of electrical conductivity. However, the regression line for pore EC versus SOM has a much higher correlation coefficient (r = -0.78) than bulk EC. The plot still trends in the negative direction though. The levels of SOM stay in the same ranges within the field type but the crop fields have longer ranges with EC. Preliminary ideas for these results include differences in samples from within row and outside rows do to water uptake by plants.
 ![Pore EC Boxplot](images_and_graphics/Rplot04.png)
-![Pore EC Correlation](results/images_and_graphics/Rplot03.png)
+![Pore EC Correlation](images_and_graphics/Rplot03.png)
 
 # **Permittivity**
 A boxplot of permittivity by field trends in the same direction as SOM boxplot. This is an expected result. The regression line has a strong positive correlation of r = 0.88. Measuring soil moisture with permittivity seems to be the strongest predictor of SOM.
